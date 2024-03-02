@@ -19,7 +19,7 @@ vim /etc/sing-box/config.json
 sleep 5 && sing-box run -c /etc/sing-box/config.json &>/dev/null &
 ```
 ## 5.问题
-> 1）启动后未达到目的，可连接ssh后用top命令检查是否存在sing-box进程；没有再重新执行启动命令；核心问题可能是tun模式的不稳定；
+> 1）启动后未达到目的，可连接ssh后用top命令检查是否存在sing-box进程；没有再重新执行启动命令；可能是tun模式当前不稳定（在homeproxy代理下，同样无法100%启动成功）；
 > 
 > 2）sing-box的版本是1.8.7（openwrt原版当前版本），在当前原版openwrt下运行下载到200M时，cpu占用70%，性能低；immortalwrt跑1000M时约为40%+。
 
