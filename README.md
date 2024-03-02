@@ -1,2 +1,16 @@
-# How to Bypass on OpenWRT using Sing-box ( unless, vless, trojan,ss )
-# How to Use It
+# Sing-box在openwrt原版的使用方法（完整版）
+## 1.准备工作及启动
+更新配置文件
+```
+vim /etc/sing-box/config.json
+```
+## 2.新增接口
+新增名称为```tun0```的接口，关联```tun0```的网络设备
+## 3.设置防火墙
+新增防火墙配置，在常规设置的区域中，新增一条，名称任意，入站、出站、转发全部允许，源区域、目标区域把lan和wan全部选择。
+## 4.设置启动项
+
+```
+```
+## 5.问题
+
